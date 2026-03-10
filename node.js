@@ -10,9 +10,10 @@ require("dotenv").config();
 
 db()
 app.use(cors());
+app.use(express.json()); 
 
 // login and signup"???
-app.use("/api/auth", useRoutes);
+app.use("/api/auth/user", useRoutes);
 
 
 
